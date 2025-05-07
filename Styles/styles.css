@@ -1,0 +1,312 @@
+@import "normalize.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* ----------------------- */
+/* CSS Variables */
+/* ----------------------- */
+
+:root {
+    --neutral--0: #fff;
+    --neutral--50: #f8f9fa;
+    --neutral--100: #f2f3f6;
+    --neutral--200: #d8dae0;
+    --neutral--300: #6d7081;
+    --neutral--400: #3b3d4a;
+    --neutral--500: #262831;
+    --neutral--600: #1d1e20;
+    --neutral--700: #161718;
+    --neutral--800: #000;
+
+    --primary--50:#f1ecff;
+    --primary--100: #e2dbfc;
+    --primary--200: #c5b8f8;
+    --primary--300: #b39ef3;
+    --primary--400: #7253ee;
+    --primary--500: #673de6;
+    --primary--600: #5025d1;
+    --primary--700: #45209d;
+    --primary--800: #2f1c6a;
+    --primary--900: #261559;
+    --primary--1000: #1f1346;
+
+    --ff-main: 'DM Sans', sans-serif;    
+    --line-height: 1.5;
+    --fw-light: 200;
+    --fw-regular: 400;
+    --fw-bold: 700; 
+    --fs-main: 1rem;
+    --fs-heading-large: 36px;
+
+    --padding-inline-main: 40px;
+    
+    
+}
+
+@media screen and (max-width: 1120px) {
+    :root {        
+        --fs-heading-large: 28px;
+        --fs-heading-medium: 20px;  
+    }
+}
+@media screen and (max-width: 760px) {
+    :root {
+        --padding-inline-main: 16px;
+        --fs-heading-large: 24px;
+        --fs-heading-medium: 18px;         
+    }
+}
+
+/* ----------------------- */
+/* Global Styles*/
+/* ----------------------- */
+
+html, body {
+    font-family: var(--ff-main);
+    font-size: var(--fs-main);
+    color: var(--primary--800);    
+    line-height: var(--line-height);
+    font-weight: var(--fw-regular);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    margin-bottom: 0;   
+}
+
+main {
+    height: 100vh;
+    width: 100%; 
+    padding-inline: var(--padding-inline-main);     
+}
+
+img {
+    width: 100%;
+}
+
+/* ----------------------- */
+/* Typography */
+/* ----------------------- */
+
+.heading-large {
+    font-size: var(--fs-heading-large);    
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+
+.heading-medium {
+    font-size: var(--fs-heading-medium);
+    font-weight: var(--fw-bold);
+    margin-bottom: 0;   
+}
+
+.text-accent {
+    color: var(--primary--500)
+}
+
+/* ----------------------- */
+/* Components */
+/* ----------------------- */
+
+/* Buttons */
+
+.btn { 
+    height: 48px;
+    width: 100%; 
+    min-width: 80px; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: var(--fw-bold);
+    color: inherit;
+    background-color: transparent;
+}
+
+.btn-primary {    
+    color: var(--neutral--0);
+    background-color: var(--primary--500);    
+    &:hover {
+        background-color: var(--primary--600); 
+    }
+}
+
+.btn-outline {
+    border: solid 2px var(--neutral--800);
+    &:hover {
+        opacity: 1;
+    }
+}
+
+/* ----------------------- */
+/* HEADER */
+/* ----------------------- */
+
+.header-container {
+    height: 88px;
+    display: flex; 
+    align-items: center;    
+    padding: 20px var(--padding-inline-main);
+    position: fixed;
+    width: 100%;
+    color: var(--neutral--800)
+}
+
+.nav-container {
+    width: 100%;
+    padding-left: 40px; 
+    display: flex;        
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    &:hover {
+        opacity: 1;
+    }    
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    
+    li a {
+        &:hover {
+            opacity: 0.7;
+        }
+    }   
+    
+    li a i {
+        margin-left: 0.5rem;                       
+    }
+}
+
+.menu-toggle {
+    display: none;            
+}
+
+.buttons-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+    
+    .language-btn {
+        display: flex;
+
+        img {
+            max-height: 24px;
+            aspect-ratio: 3/2;
+            margin-right: 4px;              
+        }
+    }
+    
+
+    .btn {
+        max-width: 48px;
+    }
+}
+
+@media screen and (max-width: 1120px) {    
+    .header-container {
+        justify-content: space-between;
+    }    
+    .nav-container {
+        display: none;
+    }
+    .menu-toggle {
+        display: flex;
+        justify-content: end;
+    }
+}
+
+/* ----------------------- */
+/* HERO */
+/* ----------------------- */
+
+.hero-container {    
+    padding-top: 128px;
+    display: flex;  
+    justify-content: center;
+    height: min-content;  
+}
+
+.hero-content {
+    flex-basis: 30%;
+    min-width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .content-list {
+        margin-block: 16px ;
+        li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+    }
+    .cta-container {
+        display: flex;
+        gap: 8px;    
+        margin-block: 16px;
+        .btn {
+            max-width: 160px;
+        }
+    }
+}
+
+.hero-image {
+    flex-basis: 70%;
+    max-width: 880px;    
+}
+
+@media screen and (max-width: 1360px) {    
+    .hero-image {
+        min-width: 660px;
+    }
+}
+
+@media screen and (max-width: 1120px) {    
+    .hero-container {
+        flex-direction: column;  
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container {
+        padding-top: 76px;
+        flex-direction: column;  
+        .cta-container { 
+            flex-direction: column;    
+            .btn {
+                max-width: unset;
+            }
+        }
+    }  
+    .hero-content {        
+        min-width: unset;
+    }    
+    .hero-image {
+       min-width: unset;
+    }
+}  
+
+/* ----------------------- */
+/* SERVICES */
+/* ----------------------- */
+
+
+
+
+
+
