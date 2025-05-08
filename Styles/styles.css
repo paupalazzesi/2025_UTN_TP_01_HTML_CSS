@@ -162,6 +162,7 @@ img {
     width: 100%;
     color: var(--neutral--800);
     background-color: var(--neutral--0);
+    transition: box-shadow 0.2s ease;
 }
 
 .nav-container {
@@ -306,8 +307,8 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-    .hero-container {
-        padding-top: 76px;
+    .hero-container {        
+        padding-top: 0px;
         flex-direction: column;  
         .cta-container { 
             flex-direction: column-reverse;    
