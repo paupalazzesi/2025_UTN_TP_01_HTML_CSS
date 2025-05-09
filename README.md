@@ -39,6 +39,7 @@ El sitio ha sido diseñado para adaptarse correctamente en un rango de anchos de
 - Uso de css variables para estratégia responsive y font sizing
 - Nesting rules para organización y claridad del código
 - Un poco de JS para aplicar estilos dinámicos y pequeñas interacciónes
+- Uso de normalice.css file para asegurar una base de estilos predeterminados crossbrowser.
 
 ![image](https://github.com/user-attachments/assets/ad5d347d-a166-4669-9f0b-3342b23aa488)
 
