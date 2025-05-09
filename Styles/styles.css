@@ -267,7 +267,37 @@ img {
             display: flex;
             align-items: center;
             gap: 8px;
+        }               
+
+        /* info icon tooltip styles */
+        [data-title]:hover:after {
+            opacity: 1;
+            transition: all 0.1s ease;
+            visibility: visible;
         }
+        [data-title]:after {
+            content: attr(data-title);
+            background-color:var(--primary--600);
+            color: var(--neutral--0);            
+            position: absolute;
+            min-width: 250px;            
+            padding: 24px 18px;
+            top: 0;
+            left: calc(100% + 4px);                      
+            opacity: 0;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 99999;
+            visibility: hidden;
+            border-radius: 4px;
+            font-style: normal;  
+            font-size: 14px;                     
+        }
+        [data-title] {
+            position: relative;
+            cursor: pointer;
+        }
+        
     }
 
     .price-container {
