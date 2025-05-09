@@ -1,6 +1,6 @@
-# TP Integrador HTML y CSS + Responsive – UTN 2025 Desarrollo web Frontend
+# TP Integrador HTML y CSS + Responsive – [UTN 2025 Desarrollo web Frontend](https://sceu.frba.utn.edu.ar/e-learning/detalle/curso/1831/programador-web-inicial-front-end-developer)
 
-Este repositorio contiene el desarrollo de una réplica responsive de la página inicial de Hostinger, como parte del Trabajo Práctico Integrador de HTML, CSS y diseño adaptable.
+Este repositorio contiene el desarrollo de una réplica responsive de la página inicial de Hostinger, como parte del Trabajo Práctico Integrador de HTML, CSS y diseño adaptable. 
 
 [Ir al sitio ↗️](https://paupalazzesi.github.io/2025_UTN_TP_01_HTML_CSS/) 
 
