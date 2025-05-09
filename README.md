@@ -2,6 +2,8 @@
 
 Este repositorio contiene el desarrollo de una réplica responsive de la página inicial de Hostinger, como parte del Trabajo Práctico Integrador de HTML, CSS y diseño adaptable.
 
+[Ir al sitio ↗️](https://paupalazzesi.github.io/2025_UTN_TP_01_HTML_CSS/) 
+
 ## 📌 Objetivo
 
 El objetivo principal fue recrear secciones clave de la página inicial de Hostinger aplicando:
